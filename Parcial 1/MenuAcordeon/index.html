@@ -5,39 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
     <title>Document</title>
   </head>
   <body>
-    <div class="navbar-container">
-      <nav class="navbar">
-        <h1 class="navbar-logo">Logo</h1>
-        <ul class="navbar-menu">
-          <li class="navbar-menu_item">
-            Inicio
-            <ul class="navbar-submenu">
-              <li>Opcion 1</li>
-              <li>Opcion 2</li>
-              <li>Opcion 3</li>
-            </ul>
-          </li>
-          <li class="navbar-menu_item">
-            Contáctanos
-            <ul class="navbar-submenu">
-              <li>Opcion 1</li>
-              <li>Opcion 2</li>
-              <li>Opcion 3</li>
-            </ul>
-          </li>
-          <li class="navbar-menu_item">
-            Productos
-            <ul class="navbar-submenu">
-              <li>Opcion 1</li>
-              <li>Opcion 2</li>
-              <li>Opcion 3</li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <header class="header">
+      <div class="tittle"><h1>TAREAS RECIENTEMENTE ENCARGADAS</h1></div>
+      <div class="card-container">
+        <div class="card-tittle">
+          <h1>Modelo de caja</h1>
+          <a href="#FirstQuestion" class="enlace"><i class="bx bx-plus"></i></a>
+        </div>
+        <div class="card-body hidden" id="FirstQuestion">
+          Se trató de hacer una investigación en formato MD sobre el modelo de
+          caja y sus propiedades
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card-tittle">
+          <h1>Posiciones</h1>
+          <a href="#SecondQuestion" class="enlace"
+            ><i class="bx bx-plus"></i
+          ></a>
+        </div>
+        <div class="card-body hidden" id="SecondQuestion">
+          En esta tarea nos encargamos de utilizar los tipos de posiciones que
+          hay, como por ejemplo: relativa, absoluta, fixed, etc.
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card-tittle">
+          <h1>Media querys</h1>
+          <a href="#ThirdQuestion" class="enlace"><i class="bx bx-plus"></i></a>
+        </div>
+        <div class="card-body hidden" id="ThirdQuestion">
+          Esta tarea trató de poner varias cajas y al momento de escalar la
+          pantalla las cajas se fueron acomodando en su lugar, esto para adaptar
+          contenido a diferentes resoluciones.
+        </div>
+      </div>
+    </header>
+    <script src="index.js"></script>
   </body>
 </html>
