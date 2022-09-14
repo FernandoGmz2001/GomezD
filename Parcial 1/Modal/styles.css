@@ -73,3 +73,47 @@ button:hover{
 #ThirdQuestion:target{
     display: block;
 }
+
+.btnModal{
+  border: none;
+  padding: 10px 20px ;
+  background-color: red;
+  color: white;
+  border-radius: 40px;
+}
+
+.modal-container{
+    height: 110vh;
+    z-index: 3;
+    width: 100%;
+    background-color: blue;
+    position: absolute;
+  background: rgba( 255, 255, 255, 0.2 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 11.5px );
+  -webkit-backdrop-filter: blur( 11.5px );
+  border-radius: 10px;
+}
+
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 110vh;  */
+    height: 100%;
+    color: black;
+}
+
+.btnExitModal{
+    margin-top: 20px;
+    background-color: red;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 40px;
+}
+
+.hidden{
+    display:none ;
+}

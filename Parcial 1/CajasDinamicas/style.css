@@ -55,15 +55,3 @@ body{
     height: 200px;
   }
 }
-
-/*
-@media screen and (min-width: 400px) and (max-width: 800px) {
-  #caja4 {
-    clear: left;
-  }
-
-  .caja {
-    width: calc((100% / 3) - 4px);
-    height: 100px;
-  }
-} */
