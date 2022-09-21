@@ -1,48 +1,77 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-body{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-h1{
-    font-size: 18px;
-    color: white;
+h1 {
+  font-size: 18px;
+  color: white;
 }
 
-.navbar{
-    display: flex;  
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(248, 57, 57);
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  height: 90vh;
+  padding: 20px;
+  gap: 20px;
+}
+
+.article {
+  display: flex;
+  width: 85%;
+  background-color: rgb(62, 62, 251);
+  /* border: 2px solid blue; */
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+  padding: 15px;
+  width: 20%;
+  height: 100%;
+  background-color: rgb(150, 4, 150);
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.caja {
+  width: 150px;
+}
+
+@media screen and (max-width: 900px) {
+  .main {
+    flex-direction: column;
+  }
+  .article {
     width: 100%;
-    height: 50px;
-    background-color: rgb(248, 57, 57);
-    justify-content: center;
-    align-items: center;
-}
-
-.main{
-    display: flex;
-    height: 90vh;
-    padding: 20px;
-    gap: 20px;
-}
-
-.article{
-    display: flex;
-    width: 85%;
-    background-color: rgb(62, 62, 251);
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.sidebar{
-    display: flex;
-    width: 20%;    
-    height: 100%;
-    background-color: rgb(150, 4, 150);
-    justify-content: center;
-    align-items: center;
+  }
+  .sidebar {
+    width: 100%;
+  }
+  .caja {
+    width: 100%;
+  }
+  .caja4¨ {
+    color: rgb(62, 62, 251);
+  }
 }
