@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "enca enca enca"
+    "col1 col1 menulat"
+    "col2 col2 menulat"
+    "pie pie pie";
+  justify-content: center;
+  align-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.caja {
+  border-radius: 5px;
+  display: flex;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  border: 1px solid black;
+  /* width: 150px;
+  height: 150px; */
+  /* border-radius: 50px; */
+}
+
+#enca {
+  grid-area: enca;
+}
+
+#menulat {
+  grid-area: menulat;
+}
+
+#col1 {
+  grid-area: col1;
+}
+
+#col2 {
+  grid-area: col2;
+}
+
+#pie {
+  grid-area: pie;
+}
+
+@media screen and (max-width: 800px) {
+  .contenedor {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5, 200px);
+    grid-template-areas:
+      "enca"
+      "menulat"
+      "col1"
+      "col2"
+      "pie";
+  }
+}
