@@ -11,4 +11,9 @@ btnToggle.addEventListener("click", () => {
     btnToggle.classList.remove("bxs-toggle-left");
     btnToggle.classList.add("bxs-toggle-right");
   }
+  // sidebar.classList.contains("hidden")
+  //   ? btnToggle.classList.add("bxs-toggle-left")
+  //   : btnToggle.classList.remove("bxs-toggle-right")
+  //   ? btnToggle.classList.remove("bxs-toggle-left")
+  //   : btnToggle.classList.add("bxs-toggle-right");
 });
