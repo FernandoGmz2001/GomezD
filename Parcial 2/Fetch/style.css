@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  width: 350px;
+  justify-content: end;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 400px;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.card_header {
+  width: 100%;
+  height: 148px;
+  padding: 0px 50px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  max-height: 400px;
+  padding-bottom: 30px;
+}
+
+.cardTitle,
+.pokemonNumber {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.cardImage {
+  padding: 0px 40px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.card-description {
+  width: 50%;
+  padding: 0px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.description-title {
+  font-size: 20px;
+  color: white;
+}
+
+.description-content {
+  font-size: 16px;
+  color: white;
+}
+.pokemonImage {
+  max-width: 250px;
+  height: 250px;
+  position: absolute;
+  top: -250px;
+}
+
+.bgFire {
+  background: rgba(242, 11, 11, 0.65);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.bgNormal {
+  background: rgba(190, 190, 190, 0.65);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.bgFairy {
+  background: rgba(240, 152, 224, 0.65);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.bgRock {
+  background: rgba(242, 204, 132, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.bgWater {
+  background: rgba(114, 184, 229, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.bgBug {
+  background: rgba(130, 172, 135, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.bgPoison {
+  background: rgba(113, 49, 155, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.bgPsychic {
+  background: rgba(220, 130, 209, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.bgGhost {
+  background: rgba(76, 17, 131, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.bgGrass {
+  background: rgba(145, 223, 70, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.bgFighting {
+  background: rgba(161, 89, 56, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.bgElectric {
+  background: rgba(248, 238, 70, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.cardTitleBackground.absolute {
+  font-size: 200px;
+  position: absolute;
+  letter-spacing: 10px;
+  z-index: -10;
+}
