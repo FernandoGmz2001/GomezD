@@ -27,6 +27,7 @@ body {
   height: 400px;
   flex-direction: column;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .card_header {
@@ -81,11 +82,17 @@ body {
 }
 
 .bgFire {
-  background: rgba(242, 11, 11, 0.65);
+  background: rgba(255, 0, 0, 0.286);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  /* background: rgba(242, 11, 11, 0.65);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(9.5px);
   -webkit-backdrop-filter: blur(9.5px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.18); */
 }
 
 .bgNormal {
@@ -181,4 +188,18 @@ body {
   position: absolute;
   letter-spacing: 10px;
   z-index: -10;
+}
+
+.bgGround {
+  background: rgba(153, 131, 73, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(11.5px);
+  -webkit-backdrop-filter: blur(11.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+@media screen and (max-width: 900px) {
+  .cardTitleBackground.absolute {
+    display: none;
+  }
 }
