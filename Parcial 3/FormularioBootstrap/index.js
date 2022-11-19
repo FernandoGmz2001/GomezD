@@ -5,7 +5,7 @@ btnConfirmar.addEventListener("click", async (e) => {
   console.log("Hola");
   let respuesta = await fetch("configuracion.php");
   let dato = await respuesta.json();
-  document.getElementByIdi("nombre").value = reg.Nombre;
+  document.getElementById("nombre").value = reg.Nombre;
   document.getElementById("apellidoPaterno").value = reg.ApellidoMaterno;
   document.getElementById("apellidoMaterno").value = reg.ApellidoPaterno;
   document.getElementById("emailInput").value = reg.Correo;
