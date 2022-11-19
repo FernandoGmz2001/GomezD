@@ -1,20 +1,18 @@
 const btnConfirmar = document.querySelector(".btnConfirmar");
 const formulario = document.querySelector(".formulario");
 
-btnConfirmar.addEventListener("click", async (e) => {
-  console.log("Hola");
-  let respuesta = await fetch("configuracion.php");
-  let dato = await respuesta.json();
-  document.getElementById("nombre").value = reg.Nombre;
-  document.getElementById("apellidoPaterno").value = reg.ApellidoMaterno;
-  document.getElementById("apellidoMaterno").value = reg.ApellidoPaterno;
-  document.getElementById("emailInput").value = reg.Correo;
-  document.getElementById("ciudadInput").value = reg.Ciudad;
-  document.getElementById("estadoInput").value = reg.Estado;
-  document.getElementById("direccionInput").value = reg.Direccion;
-  document.getElementById("telefonoInput").value = reg.Telefono;
-  document.getElementById("inputPass").value = reg.Password;
-  document.getElementById("confirmPassInput").value = reg.ConfirmPass;
-
-  window.alert("Se pudo realizar el registro exitosamente");
+btnConfirmar.addEventListener("click", async () => {
+  respuesta = await fetch("./configuracion.php");
+  data = await respuesta.json();
+  console.log(data);
+  document.querySelector("#nombre").value = data.Nombre;
+  document.querySelector("#apellidoPaterno").value = data.ApellidoMaterno;
+  document.querySelector("#apellidoMaterno").value = data.ApellidoPaterno;
+  document.querySelector("#emailInput").value = data.Correo;
+  document.querySelector("#ciudadInput").value = data.Ciudad;
+  document.querySelector("#estadoInput").value = data.Estado;
+  document.querySelector("#direccionInput").value = data.Direccion;
+  document.querySelector("#telefonoInput").value = data.Telefono;
+  document.querySelector("#inputPass").value = data.Password;
+  document.querySelector("#confirmPassInput").value = data.ConfirmPass;
 });
