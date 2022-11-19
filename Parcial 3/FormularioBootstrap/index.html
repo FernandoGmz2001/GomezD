@@ -15,8 +15,8 @@
   </head>
   <body>
     <div class="container d-flex justify-content-center align-items-center">
-      <form
-        class="row g-3 my-3 py-3 d-flex gap-2 border col-md-12 col-lg-8 justify-content-center align-items-center"
+      <div
+        class="row g-3 my-3 py-3 d-flex gap-2 border col-md-12 col-lg-8 justify-content-center align-items-center formulario"
       >
         <div class="row">
           <h1>Registrar Usuario</h1>
@@ -29,6 +29,7 @@
               class="form-control"
               id="nombre"
               placeholder="Nombre"
+              name="nombre"
             />
           </div>
         </div>
@@ -134,9 +135,12 @@
           </div>
         </div>
         <div class="row mt-3">
-          <button class="btn btn-primary">Confirmar</button>
+          <button class="btn btn-primary btnConfirmar" type="submit">
+            Confirmar
+          </button>
         </div>
-      </form>
+      </div>
+      <script src="index.js"></script>
     </div>
   </body>
 </html>
